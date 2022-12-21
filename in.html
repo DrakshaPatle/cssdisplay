@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+  <style>
+    h2 {
+      text-align: center;
+    }
+
+    .box {
+      background: goldenrod;
+      width: 300px;
+      height: 300px;
+      margin: 30px auto;
+      transition: all 2s linear;
+      display: block;
+    }
+
+    .hidden {
+      display: none;
+      opacity: 0;
+    }
+
+    .flex {
+      display: flex;
+      opacity: 0;
+    }
+    button {
+      /* display: block;
+      margin: 0 auto; */
+    }
+
+    .inline {
+  display: inline;
+}
+
+    code {
+      color: firebrick;
+    }
+  </style>
+
+  <h2>Trying to Animate to <code>display:none</code></h2>
+  <div id="bx" class="box" ></div>
+
+  <button id =btn1>TOGGLE VISIBILITY</button>
+
+
+  <button>TOGGLE VISIBILITY</button>
+  <button>TOGGLE VISIBILITY</button>
+  <button>TOGGLE VISIBILITY</button>
+  <button>TOGGLE VISIBILITY</button>
+  <script>
+
+    let box = document.getElementById('b0x'),
+      btn = document.querySelector('b');
+
+    btn.addEventListener('click', function () {
+      box.classList.toggle('hidden');
+    }, false);
+
+
+
+    // var box = document.getElementById('box'),
+    //   btn = document.querySelector('button');
+
+    // btn.addEventListener('click', function () {
+    //   box.classList.toggle('hidden');
+    // }, false);
+
+
+
+    // var box = document.getElementById('box'),
+    //   btn = document.querySelector('button');
+
+    // btn.addEventListener('click', function () {
+    //   box.classList.toggle('hidden');
+    // }, false);
+
+    // let box = document.getElementById('box'),
+    //   btn = document.querySelector('button');
+
+    // btn.addEventListener('click', function () {
+    //   box.classList.toggle('hidden');
+    // }, false);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Javascript</title>
+
+	<style type="text/css">
+
+
+
+.main{
+            width:500px;
+            height: 500px;
+            border:2px black solid;
+            margin:auto;
+             display:inline 
+        }
+		.circle {
+			width: 130px;
+			height: 130px;
+			border-radius: 50%;
+			float: left;
+			margin-right: 50px;
+		}	
+		.rounded {
+			width: 130px;
+			height: 130px;
+			border-radius: 25%;
+			float: left;
+			margin-right: 50px;
+		}
+		.square {
+			width: 130px;
+			height: 130px;
+			border-radius: 0%;
+			float: left;
+			margin-right: 50px;
+		}	
+		#circle {
+			background-color: #196F3D;
+		}
+		#rounded {
+			background-color: #5DADE2;
+		}	
+		#square {
+			background-color: #58D68D;
+		}
+	</style>
+</head>
+
+<body>
+
+    
+	<div class="circle" id="circle">
+       <center> <h3>display:block</h3></center>
+    </div>
+	<div class="rounded" id="rounded">
+        <center> <h3> display:none</h3></center>
+    </div>
+	<div class="square" id="square"></div>
+
+	<script type="text/javascript">
+
+		document.getElementById("rounded").onclick = function() {
+			document.getElementById("rounded").style.display = "block";
+		}
+
+		document.getElementById("rounded").onclick = function() {
+			document.getElementById("rounded").style.display = "none";
+		}
+
+		document.getElementById("square").onclick = function() {
+			document.getElementById("square").style.display = "none";
+		}
+
+        document.getElementById("word").onclick = function() {
+			document.getElementById("work").style.display = "inline";
+		}
+	</script>
+</body>
+</html>
